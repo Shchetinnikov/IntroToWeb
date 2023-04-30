@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="describtion" lang="en" content="WALL ART. Registration of the author. Form for filling out the questionnaire.">
+    
+    <!-- Head -->
+    <script src="../../js/head.js"></script>
+
+    <title>WALL ART. Sign up.</title>
+</head>
+<body>
+    <script src="../../js/header.js"></script>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html"></a></li>
+            <li><a href="../content/news.html">News</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Main</button>
+                    <div class="dropdown-content">
+                        <a href="../content/forum.html">Discussion</a>
+                        <a href="../content/gallery.html">Gallery</a>
+                        <a href="../content/artists.html">Artists</a>
+                        <a href="../content/products.html">Products</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                        <a href="../content/contacts.html">Contacts</a>
+                        <a href="../content/policy.html">Policy</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../content/faq.html">FAQ</a></li>
+            <li><a href="login.html">Sign in/Sign up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <form class="reg" action="" method="post" enctype="multipart/form-data">
+            <table class="reg">
+                <tr>
+                    <td class="label"><label for="name">Name:</label></td>
+                    <td class="content"><input type="text" id="name" name="name" placeholder="Your name.."></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="pseudonym">Pseudonym:</label></td>
+                    <td class="content"><input type="text" id="pseudonym" name="pseudonym" placeholder="Your pseudonym.."></td>
+                </tr>
+                <tr>
+                    <td class="label"><span>Gender:</span></td>
+                    <td class="content">
+                        <input type="radio" name="state" id="male" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="state" id="female" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label" for="country"><label>Country:</label></td>
+                    <td class="content">
+                        <select id="country" name="country" required>
+                            <option disabled>Your country..</option>
+                            <option value="Russia">Russian Federation</option>
+                            <option value="UK">United Kingdom of Great Britain</option>
+                            <option value="USA">United States of America</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="year_act">Start of activity:</label></td>
+                    <td class="content">
+                        <input type="number" id="year_act" name="year_act" placeholder="2023" min="1900" max="2099" step="1" required>
+                    <td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="about">About:</label></td>
+                    <td class="content">
+                        <textarea id="about" name="about" placeholder="Tell about yourself.." cols="100" rows="10" required></textarea>
+                    <td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="contacts">Contact info:</label></td>
+                    <td class="content">
+                        <input type='url' id="contacts" name="webcite" placeholder="Website..">
+                        <br>
+                        <input type='email' id="contacts" name="mail" placeholder="Email..">
+                        <br>
+                        <input type='tel' id="contacts" name="phone" placeholder="Phone number..">
+                        <br>
+                        <input type='text' id="contacts" name="add_inf" placeholder="Further information..">
+                    <td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="user_pic">Profile picture</label>:</td>
+                    <td class="content"><input type="file" id="user_pic" name="user_pic" accept=".jpg, .jpeg, .png"></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="login">Login:</label></td>
+                    <td class="content"><input type="email" id="login" name="login" placeholder="Login.." required></td>
+                </tr>            
+                <tr>
+                    <td class="label"><label for="passw">Password:</label></td>
+                    <td class="content"><input type="password" id="passw" name="passw" placeholder="Password.." required></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="passw_repeat">Repeat password:</label></td>
+                    <td class="content"><input type="password" id="passw_repeat" name="passw_repeat" placeholder="Repeat password.." required></td>
+                </tr>
+                <tr>
+                    <td class="label"></td>
+                    <td class="content"><input type='submit' value="Sign up"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <script src="../../js/footer.js"></script>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

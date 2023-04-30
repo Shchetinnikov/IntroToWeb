@@ -1,0 +1,68 @@
+aside a {
+    display: block;
+    width: 140px;
+    font-size: 16px;
+    text-align: left;
+    padding: 10.665px 0px 10.665px 10px;
+}
+
+aside button.dropbtn {
+    display: block;
+    width: 140px;
+    text-align: left; 
+    padding: 10.665px 0px 10.665px 10px;
+    background: rgb(20, 20, 20, 1);
+    border: none;
+}
+    
+main h1 {
+    font-size: 25px;
+}
+
+main h2 {
+    font-size: 15px;
+}
+
+main p{
+    font-size: 12px;
+    clear: both;
+}
+
+main .attachments-video {
+    width: 30%;
+    height: 20%;
+    right: 50%;
+}
+
+main .attachments-video#v1 {
+    position: relative;
+    right: 12.5%;
+}
+
+main .attachments-video#v2 {
+    position: relative;
+    left: 12.5%;
+}
+
+
+main .attachments-img#img1 { 
+    display: block;
+    position: relative;
+    left: 20%;
+    width: 70%;
+    height: 40%;
+}
+
+main .attachments-img#img1 img{
+    display: block;
+    height: 48%;
+    width: 85%;
+    margin: 10px;
+}  
+
+main .grid-products{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 10px;
+}

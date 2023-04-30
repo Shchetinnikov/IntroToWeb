@@ -1,0 +1,36 @@
+create table institutes(
+	id integer primary key,
+	short_name varchar(10) not null unique,
+	full_name varchar(64) not null unique,
+	group_code char(1) not null unique
+);
+
+create table groups(
+-- 	id integer primary key,
+	group_name char(7),
+	study_year char(9),
+	term integer constraint groups_term_ch check(term in (0, 1)),
+-- 	term integer check(term = 0 or term = 1),
+-- 	term integer check(term in (0, 1)),
+	constraint group_pk primary key (group_name, study_year, term),
+	institute_id integer references institutes(id) not null
+);
+
+create table students(
+	id integer primary key,
+	last_name varchar(64) not null,
+	first_name varchar(64) not null,
+	second_name varchar(64),
+	birthday date not null,
+	sex char(1) not null check(sex in ('М', 'Ж')),
+	citizenship varchar(128) default 'РФ' not null
+);
+
+create table students_groups(
+	student_id integer references students(id) not null,
+	group_name char(7),
+	study_year char(9),
+	term integer,
+	constraint sg_fk2 foreign key (group_name, study_year, term) references groups(group_name, study_year, term),
+	speciallity_code varchar(10)
+)

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="describtion" lang="en" content="WALL ART. Registration of the author. Form for filling out the questionnaire.">
+    
+    <script src="../../js/head.js"></script>
+
+    <title>WALL ART. Sign up.</title>
+</head>
+<body style="color: rgb(191, 191, 191)">
+    <header>
+        <nav class="navbar navbar-expand-lg p-1" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <form class="p-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="name" class="form-label d-inline" >Name:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name..">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pb-2">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="pseudonym" class="form-label d-inline">Pseudonym:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <input type="text" class="form-control" id="pseudonym" name="pseudonym" placeholder="Your pseudonym.." required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pb-2">
+                    <div class="col-lg-1 col-12">
+                        <div>
+                            <span>Gender:</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="state" id="male" value="Male">
+                            <label class="form-check-label d-inline" for="male">Male</label>
+                        </div>
+                        <div class="form-check class=mb-1">
+                            <input class="form-check-input" type="radio" name="state" id="female" value="Female">
+                            <label class="form-check-label d-inline" for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pb-2">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="country" class="form-label d-inline">Country:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <select class="form-select" id="country" name="country" required>
+                                <option disabled>Your country..</option>
+                                <option value="Russia">Russian Federation</option>
+                                <option value="UK">United Kingdom of Great Britain</option>
+                                <option value="USA">United States of America</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Australia">Australia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="year_act" class="form-label d-inline">Start of activity:</label></td>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <input type="number" class="form-control" style="width: 15%;" id="year_act" name="year_act" placeholder="2023" min="1900" max="2099" step="1" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pb-2">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="about" class="form-label d-inline">About:</label>
+                        </div>  
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="form-floating mb-1">
+                            <textarea class="form-control" id="about" name="about" placeholder="Tell about yourself.." cols="100" rows="10" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pb-2">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="contacts" class="form-label d-inline">Contact info:</label>
+                        </div>  
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <input type="url" class="form-control w-75" id="contacts" name="webcite" placeholder="Website..">
+                        </div>
+                            <div class="mb-1">
+                                <input type="email" class="form-control w-75" id="contacts" name="mail" placeholder="Email..">
+                            </div>
+                            <div class="mb-1">
+                                <input type="tel" class="form-control w-75" id="contacts" name="phone" placeholder="Phone number..">
+                            </div>
+                            <div class="mb-1">
+                                <input type="text" class="form-control w-75" id="contacts" name="add_inf" placeholder="Further information..">
+                            </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pb-2">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="user_pic" class="form-label d-inline" >Profile picture</label>
+                        </div>  
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <input type="file" id="user_pic" name="user_pic" accept=".jpg, .jpeg, .png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="login" class="form-label d-inline">Login:</label>
+                        </div>  
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <input class="form-control w-50" type="email" id="login" name="login" placeholder="Login.." required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="passw" class="form-label d-inline">Password:</label>
+                        </div>  
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <input class="form-control w-50" type="password" id="passw" name="passw" placeholder="Password.." required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-1 col-12">
+                        <div class="mb-1">
+                            <label for="passw_repeat" class="form-label d-inline">Repeat password:</label>
+                        </div>  
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="mb-1">
+                            <input class="form-control w-50" type="password" id="passw_repeat" name="passw_repeat" placeholder="Repeat password.." required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-1 col-12"></div>
+                    <div class="col-lg-5 col-12 text-center">
+                        <button type="submit" class="btn btn-success w-100">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="../../js/footer.js"></script>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
